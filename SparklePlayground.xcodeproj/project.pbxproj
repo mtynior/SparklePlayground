@@ -14,6 +14,7 @@
 		508815192BB1763E00ACE702 /* SparklePlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508815182BB1763E00ACE702 /* SparklePlaygroundTests.swift */; };
 		508815232BB1763E00ACE702 /* SparklePlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508815222BB1763E00ACE702 /* SparklePlaygroundUITests.swift */; };
 		508815252BB1763E00ACE702 /* SparklePlaygroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508815242BB1763E00ACE702 /* SparklePlaygroundUITestsLaunchTests.swift */; };
+		508815372BB1774D00ACE702 /* MainSceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508815362BB1774D00ACE702 /* MainSceneCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		5088151E2BB1763E00ACE702 /* SparklePlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparklePlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		508815222BB1763E00ACE702 /* SparklePlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparklePlaygroundUITests.swift; sourceTree = "<group>"; };
 		508815242BB1763E00ACE702 /* SparklePlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparklePlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		508815362BB1774D00ACE702 /* MainSceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneCoordinator.swift; sourceTree = "<group>"; };
+		508815382BB189B400ACE702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,7 @@
 		508815052BB1763D00ACE702 /* SparklePlayground */ = {
 			isa = PBXGroup;
 			children = (
+				508815382BB189B400ACE702 /* Info.plist */,
 				508815322BB1765100ACE702 /* Sources */,
 				508815332BB1765B00ACE702 /* Resources */,
 				508815342BB1766900ACE702 /* Tests */,
@@ -165,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				508815082BB1763D00ACE702 /* MainScene.swift */,
+				508815362BB1774D00ACE702 /* MainSceneCoordinator.swift */,
 			);
 			path = MainScene;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508815372BB1774D00ACE702 /* MainSceneCoordinator.swift in Sources */,
 				508815092BB1763D00ACE702 /* MainScene.swift in Sources */,
 				508815072BB1763D00ACE702 /* SparklePlaygroundApp.swift in Sources */,
 			);
@@ -469,6 +475,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SparklePlayground/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -497,6 +504,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SparklePlayground/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

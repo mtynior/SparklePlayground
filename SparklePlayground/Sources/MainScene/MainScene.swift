@@ -8,16 +8,30 @@
 import SwiftUI
 
 struct MainScene: View {
+    @StateObject var mainCoordinator = MainSceneCoordinator()
+    
+    
     var body: some View {
-        VStack {
+        VStack(spacing: 16) {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            
+            Text("Sparkle Playground")
+                .font(.title)
+            
+            VStack(spacing: 8) {
+                Text("Version number: \(mainCoordinator.versionNumber)")
+                Text("Build number: \(mainCoordinator.buildNumber)")
+            }
+
         }
         .padding()
     }
 }
+
+
+// MARK: - Previews
 
 #Preview {
     MainScene()
