@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainScene.swift
 //  SparklePlayground
 //
 //  Created by Michal on 25/03/2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainScene: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainScene()
 }
